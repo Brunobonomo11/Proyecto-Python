@@ -1,9 +1,4 @@
-#estudiante1_nombre = "Bruno"
-#estudiante1_apellido = "Bonomo"
-#estudiante1_ciudad = "Buenos Aires"
-
-#La palabra class me permite crear clases
-class Estudiante:
+class Usuario1:
 
   #doble guion bajo init doble guin bajo __init__
   #funcion inicializadora (constructora) --- permite añadir argumentos para las caracteristicas
@@ -11,22 +6,21 @@ class Estudiante:
     self.nombre = nombre
     self.apellido = apellido
     self.ciudad = ciudad
-    self.curso = "Python"  #variable local !!
 
-    def asistir(self):
-      print(f"La estudiante {self.mi_nombre} ha asistido a clase de {self.curso}! ")
+    def Ingresado(self):
+      print(f"El usuario {self.mi_nombre} ha ingresado su nombre de usuario {self.apellido}! ")
       
-est1 = Estudiante(nombre="Bruno", apellido="Bonomo", ciudad="Buenos Aires") #creando el objeto estudiante1 a partir de la clase Estudiante
-estudiante2 = Estudiante("Santigo", "Lopez", "Baranquilla")
-estudiante3 = Estudiante("Lucas", "Rojas", "Montevideo")
+User1 = Usuario1(nombre="Bruno", apellido="Bonomo", ciudad="Buenos Aires") #creando el objeto estudiante1 a partir de la clase Estudiante
+User2 = Usuario1("Santigo", "Lopez", "Baranquilla")
+User3 = Usuario1("Lucas", "Rojas", "Montevideo")
 
-print(est1.nombre)
+print(User1.nombre)
 
 nombre1 = input("Ingrese su nombre: ")
 apellido1 = input("Ingrese su apellido: ")
 ciudad1 = input("Ingrese su ciudad: ")
 
-est4 = Estudiante(nombre1, apellido1, ciudad1)
+est4 = Usuario1(nombre1, apellido1, ciudad1)
 
 
 class Libro:

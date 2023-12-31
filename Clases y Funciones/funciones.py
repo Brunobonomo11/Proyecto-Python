@@ -1,104 +1,112 @@
-# Imprimimos nuestro nombre apellido y fecha de nacimiento
+#SOLICITAMOS AL USUARIO QUE INGRESE ALGUNOS DE SUS DATOS PARA PODER MOSTRARLOS EN CONSOLA
 
-print("Bruno")
-print("Bonomo")
-print("11 de octubre 2000")
-
-# Mostrar cadena con un solo print con comillas triples
-
-# print("""Bruno
-# Bonomo
-# 11 de octubre 2000""")
-
-
-# Armamos variables con nuestros datos y luego imprimimos
-
-Nombre = "Bruno"
-Apellido = "Bonomo"
+Usuario1 = "Matias"
+Usuario2 = "Veronica"
+Usuario3 = "Santiago"
+Usuario4 = "Bruno"
+Usuario5 = "Martin"
 Espacio = " "
-Fecha_de_Nacimiento = "11 de octubre de 2000"
-Edad = 23
-Año_de_Nacimiento = "2000"
 
-NombreCompleto = (Nombre + Espacio + Apellido)
-print(NombreCompleto)
+Apellido_Usuario1 = "Lopez"
+Apellido_Usuario2 = "Gonzalez"
+Apellido_Usuario3 = "Calo"
+Apellido_Usuario4 = "Bonomo"
+Apellido_Usuario5 = "Rivera"
 
+Edad_Usuario1 = int(input(Usuario1 + " Introduzca su edad: "))
+Edad_Usuario2 = int(input(Usuario2 + " Introduzca su edad: "))
+Edad_Usuario3 = int(input(Usuario3 + " Introduzca su edad: "))
+Edad_Usuario4 = int(input(Usuario4 + " Introduzca su edad: "))
 
-#Solicitamos al usuario que ingrese su nombre, apellido y edad
+Nombre_Completo_Usuario1 = (Usuario1 + Espacio + Apellido_Usuario1)
+Nombre_Completo_Usuario2 = (Usuario2 + Espacio + Apellido_Usuario2)
+Nombre_Completo_Usuario3 = (Usuario3 + Espacio + Apellido_Usuario3)
+Nombre_Completo_Usuario4 = (Usuario4 + Espacio + Apellido_Usuario4)
 
-UserNombreApellido = input("Ingresa tu nombre y apellido")
-UserEdad = int(input("Ingrese su edad"))
+print(Nombre_Completo_Usuario1)
+print(Nombre_Completo_Usuario2)
+print(Nombre_Completo_Usuario3)
+print(Nombre_Completo_Usuario4)
 
-#Longitud de string de nuestra variable Fecha_de_Nacimiento
+Ciudad_Usuario1 = input(Usuario1 + " ¿En que ciudad reside actualmente: ")
+Ciudad_Usuario2 = input(Usuario2 + " ¿En que ciudad reside actualmente: ")
+Ciudad_Usuario3 = input(Usuario3 + " ¿En que ciudad reside actualmente: ")
+Ciudad_Usuario4 = input(Usuario4 + " ¿En que ciudad reside actualmente: ")
 
+Nombres_Usuarios_completa = ["Matias", "Veronica", "Santiago", "Bruno", "Martin", "Antonio", "Carla", "Camila", "Marcela"]
+Nombres_Usuarios_completa.append("Enrique")
+Nombres_Usuarios_completa.append("Delfina")
 
-#len(Fecha_de_Nacimiento)
+print(Nombres_Usuarios_completa)
 
-Lista_edades_Users = [18, 22, 25, 28, 32, 35, 40, 42, 46]
-NombresUsers = ["Juan", "Martin", "Bruno", "Matias", "Santiago", "Ezequiel"]
+CiudadesUsuarios = ("Palermo", "Caballito", "Recoleta", "Belgrano", "Lomas de Zamora", "Boedo", "Devoto", "Villa del Parque", "Microcentro")
+print(CiudadesUsuarios)
 
-#Eliminamos Users que ya no necesitamos
+Cantidad_de_Usuarios = 9
+Cantidad_de_Usuarios += 2
+print(Cantidad_de_Usuarios)
 
-#NombresUsers[:2] = []
-#print(NombresUsers)
+Nombres_Usuarios_completa.append("Roberto")
+Nombres_Usuarios_completa.append("Claudia")
 
+Nombres_Usuarios_completa.pop(5)
+print(Nombres_Usuarios_completa)
 
-#Agregamos nuevos nombres de usuario a la lista
+Profesiones_Tuplas_Usuarios = ("Ingeniero", "Medico", "Bombero", "Policia", "Economista", "Psicologa", "Pediatra", "Cajero", "Vendedor")
 
-NombresUsers.append("Pablo")
-NombresUsers.append("Cecilia")
-print(NombresUsers)
+Profesion_Usuario1 = input(Usuario1 + " ¿Cual es su profesion actualmente: ")
+Profesion_Usuario2 = input(Usuario2 + " ¿Cual es su profesion actualmente: ")
+Profesion_Usuario3 = input(Usuario3 + " ¿Cual es su profesion actualmente: ")
+Profesion_Usuario4 = input(Usuario4 + " ¿Cual es su profesion actualmente: ")
+Profesion_Usuario5 = input(Usuario5 + " ¿Cual es su profesion actualmente: ")
 
-#Longitud de la lista
+# A CADA USUARIO LE RESTAMOS $30.000 DE SU SUELDO QUE TIENE QUE APORTAR AL ESTADO
 
-#len(Lista_edades_Users)
+Sueldo_Usuario1 = (283000)
+Sueldo_Usuario2 = (298000)
+Sueldo_Usuario3 = (359000 - 30000)
+Sueldo_Usuario4 = (409000 - 30000)
+Sueldo_Usuario5 = (426000 - 30000)
+print(Sueldo_Usuario1)
+print(Sueldo_Usuario2)
+print(Sueldo_Usuario3)
+print(Sueldo_Usuario4)
+print(Sueldo_Usuario5)
 
+#INSERTAMOS UN CONDICIONAL PARA VER SI LOS SUELDOS PERTENCEN A LA LISTA EN DONDE EL ESTADO LES DESCUENTA $30.000 (USUARIOS QUE TIENEN SUELDOS ARRIBA DE $300.0000)
 
-#Buscamos nuestro item en la lista para saber en que indice se encuentra
-
-Lista_edades_Users.index(35)
-
-
-#Agregamos tupla de datos con ciudades de nuestros usuarios
-
-CiudadesUsers = ("Buenos Aires", "Palermo", "Caballito", "Recoleta", "Belgrano", "Lomas de Zamora")
-print(CiudadesUsers)
-
-
-#Pedimos al usuario que ingrese su ciudad donde reside
-
-CiudadUser = input("¿En que ciudad vivis actualmente?")
-
-#Convertimos la lista de nombres de usuarios en una tupla
-
-#tuple(NombresUsers)
-
-# Igualdad    Nombre == ("Bruno")
-
-
-#Cantidad de usuarios, incrementamos +1 a medida que se van sumando
-
-CantidadUsers = 6
-CantidadUsers += 1
-print(CantidadUsers)
-
-
-#Insertamos un condicional para ver si los usuarios son mayores de 18 años
-
-edad = int(input("Ingrese su edad para continuar"))
-if edad >= 18:
-  print("Es un adulto")
-if edad <= 18:
-  print("No es un adulto")
-elif edad <= 15:
-  print("Debe ingresar una edad para continuar")
-if True:
-  print("Cumple con los requisitos")
+if Sueldo_Usuario1 > 300000:
+  print("Usted ha aportado correctamente sus $30.000")
+if Sueldo_Usuario1 < 300000:
+  print("Usted no pertenece a la lista para aportar al estado")
 else:
-  print("No cumple con los requisitos establecidos")
+  print("Usted no ha ingresado su valor remunerativo")
+  
+  
+if Sueldo_Usuario2 > 300000:
+  print("Usted ha aportado correctamente sus $30.000")
+if Sueldo_Usuario2 < 300000:
+  print("Usted no pertenece a la lista para aportar al estado")
+else:
+  print("Usted no ha ingresado su valor remunerativo")
+  
 
+if Sueldo_Usuario3 > 300000:
+  print("Usted ha aportado correctamente sus $30.000")
+if Sueldo_Usuario3 < 300000:
+  print("Usted no pertenece a la lista para aportar al estado")
+else:
+  print("Usted no ha ingresado su valor remunerativo")
+  
 
-# Sumamos While para contar la cantidad de usuarios
+if Sueldo_Usuario4 > 300000:
+  print("Usted ha aportado correctamente sus $30.000")
+if Sueldo_Usuario4 < 300000:
+  print("Usted no pertenece a la lista para aportar al estado")
+else:
+  print("Usted no ha ingresado su valor remunerativo")
+
+#SUMAMOS WHILE PARA SUMAR LA CANTIDAD DE USUARIOS
 
 num = 1
 while num > 0:
@@ -106,109 +114,74 @@ while num > 0:
  num -=1
  print("Usuario Ingresado!")
 
-#Ingresos = 1
-#while Ingresos <= 3:
-# txt = input("Ingrese numero de usuario: ")
-#  if txt == "1":
-#    print("Usuario Ingresado", Ingresos)
-#    break
-#    Ingresos +=1
-#  else:
-#    print("Has agotado tus tres intentos")
+# CREAMOS UN CONJUNTO CON LAS EMPRESAS EN LA QUE TRABAJA CADA USUARIO
 
-# Sentencia For
+Empresas_Usuarios = {"Coca Cola", "Serenisima", "Accenture", "Carrefour", "Rouge"}
+Empresas_Usuarios.add("Perfumerie")
+print(Empresas_Usuarios)
 
-#for valor in Lista_edades_Users:
-#  print("Soy un item de la lista")
+Edades_Usuarios = {"Matias": 26, "Veronica": 29, "Bruno" : 23, "Martin": 35, "Antonio": 45, "Carla":39}
 
-#Recorremos Nombres de usuario con un For
+Edades_Usuarios["Bruno"]
 
-#for letra in NombresUsers:
-#  print(letra)
+#AGREGAMOS UN NUEVO USUARIO CON SU RESPECTIVA EDAD AL DICCIONARIO
 
+Edades_Usuarios["Cecilia"] = 37
+print(Edades_Usuarios)
 
-# Creamos un conjunto
+# AGREGAMOS ITEMS PARA CONOCER NOMBRES Y EDADES DE CADA USUARIO
 
-ConjuntoDeportes = {"Futbol", "Tenis", "Basquet", "Handball", "Atletismo"}
-ConjuntoDeportes.add("Voley")
-print(ConjuntoDeportes)
-
-# Agregamos un SET
-
-#mi_lista = list({1,2,3,4})
-#mi_set = set(mi_lista)
-#print(type(mi_set))
-
-#Agregamos Diccionarios
-
-# colores = {"amarillo": "yellow", "azul": "blue", "rojo": "red"}
-# type(colores)
-
-# EDADES USERS CON DICCIONARIOS [18, 22, 25, 28, 32, 35, 40, 42, 46]
-# ["Juan", "Martin", "Bruno", "Matias", "Santiago", "Ezequiel"]
-
-edades = {"Juan": 18, "Martin": 22, "Bruno" : 25, "Matias": 28, "Santiago": 32, "Ezequiel":35}
-
-
-#Edad de un usuario en especifico en este caso Bruno
-
-edades["Bruno"]
-
-
-#Agregamos usuario y edad al diccionario
-
-edades["Cecilia"] = 37
-print(edades)
-
-
-# Agregamos Insert para insertar una edad en un indice en especifico
-
-Lista_edades_Users.insert(-1,44)
-print(Lista_edades_Users)
-
-
-# Agregamos get y Keys (Traer todas las claves del diccionario)
-
-edades.get("Manuel", "no hay clave Manuel")
-edades.keys()
-
-
-# Agregamos Items
-
-edades.items()
-for clave, valor in edades.items():
+Edades_Usuarios.items()
+for clave, valor in Edades_Usuarios.items():
       print(clave, valor)
 
 
-#Definimos funciones
+#DEFINIMOS FUNCIONES PARA SALUDAR AL USUARIO
 
-def saludar_con_nombre(nombre):
-  saludando = print("Hola, nombre, ¿Cómo estás?")
+def Saludamos_Al_Usuario(nombre):
+  saludando = print("Hola", nombre, "¿Como estas?")
   return saludando
 
-saludar_con_nombre("Bruno")
+Saludamos_Al_Usuario("Bruno")
+
+#DEFINIMOS FUNCIONES PARA SABER LOS AÑOS QUE TIENE DE ANTIGUEDAD CADA USUARIO EN LA EMPRESA
+
+def Tiempo_En_Empresa_Usuario1(Actualidad,Inicio):
+  return Actualidad - Inicio
+Años_En_Empresa1 = Tiempo_En_Empresa_Usuario1(2024,2015)
+
+print(Años_En_Empresa1)
+
+def Tiempo_En_Empresa_Usuario2(Actualidad,Inicio):
+  return Actualidad - Inicio
+Años_En_Empresa2 = Tiempo_En_Empresa_Usuario2(2024,2010)
+
+print(Años_En_Empresa2)
+
+def Tiempo_En_Empresa_Usuario3(Actualidad,Inicio):
+  return Actualidad - Inicio
+Años_En_Empresa3 = Tiempo_En_Empresa_Usuario3(2024,2002)
+
+print(Años_En_Empresa3)
+
+def Tiempo_En_Empresa_Usuario4(Actualidad,Inicio):
+  return Actualidad - Inicio
+Años_En_Empresa4 = Tiempo_En_Empresa_Usuario4(2024,2019)
+
+print(Años_En_Empresa4)
 
 # Uso de *Args
 
-#def suma(*args):
-# s = 0
-#  for arg in args:
-#      s += arg
-#      return s
+def suma(*args):
+  return sum(args)
 
-#suma(1, 3, 4, 2)
-
-#float
-#float(25)
-#str(2.5)
-#redondear un numero decimal round(2.6) // Devuelve 3 es el mas cercano
-
+suma(5, 5, 3)
 
 #Agreamos Try-Except con ekse para sumar cantidad de usuarios
 
 while (True):
   try:
-    a = float(input("Introduce un numero de usuario: "))
+    a = float(input("Introduzca su numero de usuario: "))
     b = float(input("Introduce otro numero de usuario: "))
     print(round(a + b))
   except:
