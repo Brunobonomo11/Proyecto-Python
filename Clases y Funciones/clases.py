@@ -1,7 +1,5 @@
 class Usuario1:
 
-  #doble guion bajo init doble guin bajo __init__
-  #funcion inicializadora (constructora) --- permite añadir argumentos para las caracteristicas
   def __init__(self, nombre, apellido, ciudad):
     self.nombre = nombre
     self.apellido = apellido

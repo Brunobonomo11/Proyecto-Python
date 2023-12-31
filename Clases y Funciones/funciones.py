@@ -1,3 +1,5 @@
+from collections import namedtuple
+
 #SOLICITAMOS AL USUARIO QUE INGRESE ALGUNOS DE SUS DATOS PARA PODER MOSTRARLOS EN CONSOLA
 
 Usuario1 = "Matias"
@@ -191,3 +193,12 @@ while (True):
         break
   finally:
     print("Fin del bucle")
+    
+UsuarioNuevo10 = namedtuple("NuevoUsuario", ["Nombre", "Apellido", "Ciudad"])
+
+Usuario_Ingresado = UsuarioNuevo10("Ricardo", "Taberna", "Monte Grande")
+print(Usuario_Ingresado)
+
+print(Usuario_Ingresado._asdict())
+    
+    
